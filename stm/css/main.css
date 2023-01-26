@@ -1,0 +1,154 @@
+body {
+	width: 100%;
+	font-family: arial;
+}
+
+#main-content {
+	max-width: 500px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#progress-wrapper {
+	width: 100%;
+	height: 15px;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	flex-wrap: nowrap;
+	padding-top: 20px;
+	justify-content: space-around;
+}
+
+div[id^="progress-question-"] {
+	border: 1px lightblue solid;
+	display: block;
+	width: 1em;
+}
+
+div.progressWrong {
+	background-color: red;
+}
+
+div.progressRight {
+	background-color: green;
+}
+
+#score-wrapper {
+	display: none;
+}
+
+#score-label {
+	text-decoration: bold;
+	margin: auto;
+	font-size: 3em;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+input[type="button"] {
+	font-size: 1.5em;
+}
+
+#difficulty li {
+	border: 1px lightblue solid;
+	border-radius: 4px;
+	width: 80%;
+	padding: 0px;
+	margin: 5px auto;
+}
+
+#difficulty input {
+	display: none;
+}
+
+#difficulty input:checked + label {
+	background-color: lightblue;
+}
+
+#difficulty label {
+	width: 100%;
+	display: block;
+	padding: 3px 0px;
+}
+
+#answers li {
+	border: 1px lightblue solid;
+	border-radius: 4px;
+	width: 80%;
+	padding: 0px;
+	margin: 5px auto;
+}
+
+#answers li.correct {
+	border-color: green;
+	color: green;
+}
+
+#answers li.right {
+	border-color: green;
+	background-color: green;
+	color: white;
+}
+
+#answers li.wrong {
+	border-color: red;
+	background-color: red;
+	color: white;
+}
+
+#answers input {
+	display: none;
+}
+
+#answers input:checked + label {
+	background-color: lightblue;
+}
+
+#answers label {
+	width: 100%;
+	display: block;
+	padding: 3px 0px;
+}
+
+#cb-button {
+	border: 1px lightblue solid;
+	border-radius: 4px;
+	width: 80%;
+	padding: 0px;
+	margin: 5px auto;
+}
+
+#cb-button input {
+	display: none;
+}
+
+#cb-button input:checked + label {
+	background-color: lightblue;
+}
+
+#cb-button label {
+	width: 100%;
+	display: block;
+	padding: 3px 0px;
+}
+
+div[id^="question-"] {
+	display: none;
+}
+
+input[id^="submit-"] {
+	float: right;
+}
+
+input[id^="next-"] {
+	float: right;
+}
+
+input[id^="quit-"] {
+	float: left;
+}

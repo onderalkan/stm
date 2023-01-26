@@ -1,0 +1,54 @@
+﻿<html>
+	<head>
+		<title>dindersioyun.com</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css"/>
+		<script src="./resources/data.js"></script>
+		<script src="./js/utils.js"></script>
+		<script src="./js/question.js"></script>
+		<script src="./js/game.js"></script>
+	</head>
+	<body style="text-align: center">
+		<div id="main-content">
+			<h1>Sınıf ve Konu</h1>
+			<div id="game-setup-wrapper">
+				<div id="categories-wrapper">
+					<h2>Bölüm Seç</h2>
+			 		<div id="categories"></div>
+				</div>
+				<div id="difficulty-wrapper">
+					<h2>Seçenek Sayısını Seç</h2>
+					<ul id="difficulty">
+						<li>
+							<input type="radio" name="difficulty" value="2" id="easy" checked="true"/>
+							<label for="easy">2 Şıklı</label>
+						</li>
+						<li>
+							<input type="radio" name="difficulty" value="3" id="medium"/>
+							<label for="medium">3 Şıklı</label>
+						</li>
+						<li>
+							<input type="radio" name="difficulty" value="4" id="hard"/>
+							<label for="hard">4 Şıklı</label>
+						</li>
+					</ul>
+				</div>
+				<br>
+				<div id="game-controls">
+					<input type="button" id="start" value="Başla" onclick="startGame();"/>
+				</div>
+			</div>
+			<div id="game-wrapper"></div>
+			<div id="score-wrapper">
+				<h3>Puan:</h3>
+				<label id="score-label"></label>
+				<br><br>
+				<input type="button" id="menu" value="Menu" onclick="restartGame();"/>
+			</div>
+			<div id="progress-wrapper"></div>
+		</div>
+	</body>
+		<p align="center"><b>
+		<a href="https://www.dindersioyun.com/" style="text-decoration: none">
+		<font size="2">dindersioyun.com</font>
+		</a></b></p>
+</html>
